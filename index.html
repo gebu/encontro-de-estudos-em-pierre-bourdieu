@@ -1,23 +1,236 @@
 ---
-layout: default
+layout: site
+title: Encontro de Estudos em Pierre Bourdieu
 ---
 
-<div class="home">
+<!-- Intro Header -->
 
-  <h1 class="page-heading">Posts</h1>
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="brand-heading">{{ site.name }}</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <p class="intro-text"> {{ site.author.name }} </p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <p class="date"> {{ site.date }} </p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+          <a href="#conferencias" class="btn btn-circle page-scroll">
+           <i class="fa fa-angle-double-down animated"></i>
+          </a>
 
-</div>
+        </div>
+      </div>
+    </div>
+  </div><!-- About Section -->
+</header>
+
+<section id="conferencias">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Conferências</h2>
+
+      <!-- <div class="col&#45;lg&#45;10 col&#45;lg&#45;offset&#45;2"> -->
+        <h3>Conferência de abertura
+          <small>12 de novembro, 19h</small>
+        </h3>
+
+        <dl class="conferencias">
+          <dt>Prof. Dr. Renato Ortiz
+          <small>Universidade Estadual de Campinas</small>
+          </dt>
+          <dd>
+          <p class="lead">Título da Conferência</p>
+          </dd>
+        </dl>
+
+        <h3>Conferência de encerramento
+          <small>13 de novembro, 19h</small>
+        </h3>
+
+        <dl class="conferencias">
+          <dt>Prof. Dr. Bernard Lahire
+          <small>l’Ecole Normale Supérieure de Lyon</small>
+          </dt>
+          <dd>
+          <p class="lead">Arte e Magia Social</p>
+          </dd>
+        </dl>
+
+    </div>
+  </div><!-- Conferencias -->
+</section>
+
+<section id="minicurso">
+  <div class="minicurso-section">
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Mini-Curso</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet semper tellus, vestibulum placerat nulla. Pellentesque nisi purus, varius et pretium vel, convallis sit amet est. Aliquam accumsan aliquet mauris. Fusce vel turpis vitae nisl viverra fringilla. Curabitur non nunc pretium, consequat diam at, ultrices orci. Fusce mauris quam, sodales ut nibh quis, molestie ultrices est. Suspendisse potenti.</p>
+
+        <p>Suspendisse finibus euismod vulputate. Duis dignissim eros eu volutpat rhoncus. Praesent dui ex, ultricies in justo sit amet, congue condimentum urna. Mauris id nunc urna. Proin vel imperdiet massa. Aliquam pellentesque eros quis aliquam ultrices. Morbi elementum sollicitudin ante, euismod dignissim sem condimentum nec. Suspendisse vitae eleifend mi, ut tristique leo. Pellentesque at convallis libero. Mauris a viverra ipsum.</p>
+
+        <p>Suspendisse aliquam porta placerat. Maecenas tristique faucibus lectus in laoreet. Vivamus mattis euismod ipsum, sit amet volutpat nibh eleifend nec. In ac libero in purus porttitor sagittis sed sodales risus. Etiam et turpis eget justo sagittis varius. Suspendisse ut vehicula lorem. Mauris iaculis tempor nisi sit amet efficitur. Sed et odio accumsan, elementum quam sit amet, tempus odio. Proin finibus ante at leo condimentum, consectetur rhoncus felis porttitor. Maecenas porttitor lobortis tortor, sed volutpat lectus. Donec quis turpis tellus. Phasellus ut vestibulum turpis.</p>
+
+        <p>In elementum cursus purus, ut sodales ante blandit id. Mauris pellentesque libero sit amet nibh pulvinar finibus. Praesent volutpat nec est quis malesuada. Nam condimentum vitae libero et viverra. Phasellus a arcu nec tellus porta commodo. Fusce bibendum egestas euismod. Vestibulum placerat ex a ligula congue auctor. Nullam cursus tellus non porta porta. Pellentesque pretium urna nec maximus molestie. Quisque vel sodales dolor.</p>
+
+        <p>Cras pulvinar rutrum pretium. Proin non euismod neque. Suspendisse luctus porttitor risus sit amet suscipit. Praesent ante sapien, lobortis id turpis at, rutrum sodales diam. Nulla laoreet, purus quis blandit tincidunt, justo ligula auctor nisi, vitae euismod lorem ex eget arcu. Nunc sodales erat sit amet sem blandit consectetur. Vivamus nunc tellus, posuere ac ex in, dapibus vehicula erat. Curabitur consequat purus at quam viverra mollis sit amet in mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce suscipit blandit lectus, id rutrum magna imperdiet vitae. Integer sed sagittis nibh. Morbi dignissim suscipit eleifend. </p>
+
+      </div>
+    </div>
+  </div><!-- Minicurso -->
+</section>
+
+<section id="gts">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2><abbr title="Grupos de Trabalho">GTs</abbr></h2>
+
+      <div class="col-lg-6">
+        <h3 id="gt1"><abbr title="Grupos de Trabalho">GT</abbr>1: Teoria</h3>
+
+        <dl>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet semper tellus, vestibulum placerat nulla. Pellentesque nisi purus, varius et pretium vel, convallis sit amet est. Aliquam accumsan aliquet mauris. Fusce vel turpis vitae nisl viverra fringilla. Curabitur non nunc pretium, consequat diam at, ultrices orci. Fusce mauris quam, sodales ut nibh quis, molestie ultrices est. Suspendisse potenti.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Suspendisse finibus euismod vulputate. Duis dignissim eros eu volutpat rhoncus. Praesent dui ex, ultricies in justo sit amet, congue condimentum urna. Mauris id nunc urna. Proin vel imperdiet massa. Aliquam pellentesque eros quis aliquam ultrices. Morbi elementum sollicitudin ante, euismod dignissim sem condimentum nec. Suspendisse vitae eleifend mi, ut tristique leo. Pellentesque at convallis libero. Mauris a viverra ipsum.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Suspendisse aliquam porta placerat. Maecenas tristique faucibus lectus in laoreet. Vivamus mattis euismod ipsum, sit amet volutpat nibh eleifend nec. In ac libero in purus porttitor sagittis sed sodales risus. Etiam et turpis eget justo sagittis varius. Suspendisse ut vehicula lorem. Mauris iaculis tempor nisi sit amet efficitur. Sed et odio accumsan, elementum quam sit amet, tempus odio. Proin finibus ante at leo condimentum, consectetur rhoncus felis porttitor. Maecenas porttitor lobortis tortor, sed volutpat lectus. Donec quis turpis tellus. Phasellus ut vestibulum turpis.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>In elementum cursus purus, ut sodales ante blandit id. Mauris pellentesque libero sit amet nibh pulvinar finibus. Praesent volutpat nec est quis malesuada. Nam condimentum vitae libero et viverra. Phasellus a arcu nec tellus porta commodo. Fusce bibendum egestas euismod. Vestibulum placerat ex a ligula congue auctor. Nullam cursus tellus non porta porta. Pellentesque pretium urna nec maximus molestie. Quisque vel sodales dolor.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Cras pulvinar rutrum pretium. Proin non euismod neque. Suspendisse luctus porttitor risus sit amet suscipit. Praesent ante sapien, lobortis id turpis at, rutrum sodales diam. Nulla laoreet, purus quis blandit tincidunt, justo ligula auctor nisi, vitae euismod lorem ex eget arcu. Nunc sodales erat sit amet sem blandit consectetur. Vivamus nunc tellus, posuere ac ex in, dapibus vehicula erat. Curabitur consequat purus at quam viverra mollis sit amet in mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce suscipit blandit lectus, id rutrum magna imperdiet vitae. Integer sed sagittis nibh. Morbi dignissim suscipit eleifend. </p>
+          </dd>
+
+        </dl>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <h3 id="gt2"><abbr title="Grupos de Trabalho">GT</abbr>2: Aplicação</h3>
+
+        <dl>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet semper tellus, vestibulum placerat nulla. Pellentesque nisi purus, varius et pretium vel, convallis sit amet est. Aliquam accumsan aliquet mauris. Fusce vel turpis vitae nisl viverra fringilla. Curabitur non nunc pretium, consequat diam at, ultrices orci. Fusce mauris quam, sodales ut nibh quis, molestie ultrices est. Suspendisse potenti.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Suspendisse finibus euismod vulputate. Duis dignissim eros eu volutpat rhoncus. Praesent dui ex, ultricies in justo sit amet, congue condimentum urna. Mauris id nunc urna. Proin vel imperdiet massa. Aliquam pellentesque eros quis aliquam ultrices. Morbi elementum sollicitudin ante, euismod dignissim sem condimentum nec. Suspendisse vitae eleifend mi, ut tristique leo. Pellentesque at convallis libero. Mauris a viverra ipsum.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Suspendisse aliquam porta placerat. Maecenas tristique faucibus lectus in laoreet. Vivamus mattis euismod ipsum, sit amet volutpat nibh eleifend nec. In ac libero in purus porttitor sagittis sed sodales risus. Etiam et turpis eget justo sagittis varius. Suspendisse ut vehicula lorem. Mauris iaculis tempor nisi sit amet efficitur. Sed et odio accumsan, elementum quam sit amet, tempus odio. Proin finibus ante at leo condimentum, consectetur rhoncus felis porttitor. Maecenas porttitor lobortis tortor, sed volutpat lectus. Donec quis turpis tellus. Phasellus ut vestibulum turpis.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>In elementum cursus purus, ut sodales ante blandit id. Mauris pellentesque libero sit amet nibh pulvinar finibus. Praesent volutpat nec est quis malesuada. Nam condimentum vitae libero et viverra. Phasellus a arcu nec tellus porta commodo. Fusce bibendum egestas euismod. Vestibulum placerat ex a ligula congue auctor. Nullam cursus tellus non porta porta. Pellentesque pretium urna nec maximus molestie. Quisque vel sodales dolor.</p>
+          </dd>
+
+          <dt>Fulana de Tal</dt>
+          <dd>
+          <strong>Título do Trabalho</strong>
+          <p>Cras pulvinar rutrum pretium. Proin non euismod neque. Suspendisse luctus porttitor risus sit amet suscipit. Praesent ante sapien, lobortis id turpis at, rutrum sodales diam. Nulla laoreet, purus quis blandit tincidunt, justo ligula auctor nisi, vitae euismod lorem ex eget arcu. Nunc sodales erat sit amet sem blandit consectetur. Vivamus nunc tellus, posuere ac ex in, dapibus vehicula erat. Curabitur consequat purus at quam viverra mollis sit amet in mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce suscipit blandit lectus, id rutrum magna imperdiet vitae. Integer sed sagittis nibh. Morbi dignissim suscipit eleifend. </p>
+          </dd>
+
+        </dl>
+
+      </div>
+
+    </div>
+  </div><!-- GTS -->
+</section>
+
+<section id="programacao">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Programação</h2>
+
+      <table class="table">
+        <tr>
+          <th></th>
+          <th>12 de novembro</th>
+          <th>13 de novembro</th>
+          <th>14 de novembro</th>
+        </tr>
+        <tr>
+          <td>Manhã</td>
+          <td><a href="#minicurso">Minicurso</a></td>
+          <td><a href="#minicurso">Minicurso</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tarde</td>
+          <td></td>
+          <td><a href="#gt1"><abbr title="Grupo de Trabalho">GT</abbr>1: Teoria</a></td>
+          <td><a href="#gt2"><abbr title="Grupo de Trabalho">GT</abbr>2: Aplicação</a></td>
+        </tr>
+        <tr>
+          <td>Noite</td>
+          <td><a href="#conferencia-abertura">Conferência de abertura</a></td>
+          <td><a href="#conferencia-encerramento">Conferência de encerramento</a></td>
+          <td></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</section><!--Programação-->
+
+<footer class="footer">
+  <div class="container text-center">
+    <p class="footer">Contato: <a href="mailto:{{site.email}}">Grupo de Estudos e Pesquisas em Pierre Bourdieu</a></p>
+    <!-- <p>Copyright © Your Website 2014</p> -->
+  </div>
+</footer>
+
+  <div id="map">
+  </div><!-- map -->
+
+<!-- jQuery Version 1.11.0 -->
+  <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+
+<!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js" type="text/javascript"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script type="text/javascript" src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script>
+
+<!-- Custom Theme JavaScript -->
+  <script src="js/grayscale.js" type="text/javascript"></script>
+
+</body>
+</html>
