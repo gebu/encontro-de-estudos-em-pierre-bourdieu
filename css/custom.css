@@ -20,6 +20,18 @@ h2 {
   text-align: center;
 }
 
+h3 > small {
+  display: block;
+  padding-top: 10px;
+  font-style: small-caps;
+  font-weight: 100;
+}
+
+h3 > small > strong {
+  font-weight: 500;
+  font-style: none;
+}
+
 .brand-heading {
   font-weight: 800;
   font-size: 30px !important;
@@ -61,6 +73,10 @@ dl.conferencias {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  min-height: 100vh;
+}
+
+#gts {
   min-height: 100vh;
 }
 
