@@ -43,9 +43,20 @@ h3 > small > strong {
   }
 }
 
-/* .intro { */
-/*   background: url(../img/capa.png) no-repeat top center scroll; */
-/* } */
+.intro {
+  /* background: url(../img/capa.png) no-repeat top center scroll; */
+  background-position: 64% 30%;
+}
+
+#intro-venue {
+  display: none;
+}
+
+@media(min-width:767px) {
+  #intro-venue {
+    display: block;
+  }
+}
 
 .date {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;

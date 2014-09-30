@@ -5,7 +5,7 @@ title: Encontro de Estudos em Pierre Bourdieu
 
 <!-- Intro Header -->
 
-<header class="intro">
+<header class="intro parallax" data-velocity=".2222">
   <div class="intro-body">
     <div class="container">
       <div class="row">
@@ -13,7 +13,7 @@ title: Encontro de Estudos em Pierre Bourdieu
           <h1 class="brand-heading">{{ site.name }}</h1>
 
           <p class="intro-text"> {{ site.author.name }} </p>
-          <p><abbr title="Instituto de Filosofia e Ciências Humanas">IFCH</abbr>/<abbr title="Universidade Estadual de Campinas">Unicamp</abbr></p>
+          <p id="intro-venue"><abbr title="Instituto de Filosofia e Ciências Humanas">IFCH</abbr>/<abbr title="Universidade Estadual de Campinas">Unicamp</abbr></p>
 
           <p class="date"> {{ site.date }} </p>
 
@@ -243,6 +243,14 @@ title: Encontro de Estudos em Pierre Bourdieu
 
 <!-- Custom Theme JavaScript -->
   <script src="js/grayscale.js" type="text/javascript"></script>
+
+  <! -- Parallax -->
+  <script src="js/jquery.scrolly.js" type="text/javascript"></script>
+  <script>
+      $(document).ready(function(){
+         $('.parallax').scrolly({bgParallax: true});
+      });
+  </script>
 
 </body>
 </html>
