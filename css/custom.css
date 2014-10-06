@@ -1,3 +1,7 @@
+.navbar {
+  font-weight: 300;
+}
+
 .navbar-brand {
   font-size: 10px;
 }
@@ -48,18 +52,28 @@ h3 > small > strong {
   background-position: 64% 30%;
 }
 
-#intro-venue {
+.intro {
+  padding-top: 110px;
+}
+
+@media(min-width:767px) {
+  .intro {
+    padding-top: 150px;
+  }
+}
+
+#venue {
   display: none;
 }
 
 @media(min-width:767px) {
-  #intro-venue {
-    display: block;
+  #venue {
+    display: inline;
   }
 }
 
 .date {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -105,7 +119,7 @@ dl.conferencias {
 }
 
 dt {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 22px;
 }
 
@@ -115,7 +129,7 @@ dd > p {
 
 dt > small,
 dd > strong {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 100;
   font-size: 20px;
   display: block;
@@ -128,7 +142,7 @@ dd > p.lead {
 }
 
 .table {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 20px;
 }
 
@@ -136,9 +150,9 @@ dd > p.lead {
   font-size: .95em;
   line-height: 1em;
   padding: 10px;
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  /* font-weight: 100; */
-  /* text-transform: uppercase; */
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
   background-color: #fff;
   color: #222;
 }
