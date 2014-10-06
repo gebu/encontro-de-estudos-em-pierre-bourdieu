@@ -2,21 +2,21 @@
   font-weight: 300;
 }
 
-.navbar-brand {
-  font-size: 10px;
-}
+/* .navbar-brand { */
+/*   font-size: 10px; */
+/* } */
 
-@media(min-width: 360px) {
-  .navbar-brand {
-    font-size: 12px;
-  }
-}
+/* @media(min-width: 360px) { */
+/*   .navbar-brand { */
+/*     font-size: 12px; */
+/*   } */
+/* } */
 
-@media(min-width: 768px) {
-  .navbar-brand {
-    font-size: 14px;
-  }
-}
+/* @media(min-width: 768px) { */
+/*   .navbar-brand { */
+/*     font-size: 14px; */
+/*   } */
+/* } */
 
 h2 {
   font-size: 3em;
@@ -76,6 +76,12 @@ h3 > small > strong {
   font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+#sobre {
+  min-height: 100vh;
+  background-color: #222;
+  color: #fff;
 }
 
 #conferencias {
@@ -160,4 +166,28 @@ dd > p.lead {
 #map {
   padding: 0;
   margin: 0;
+}
+
+a.lattes:after,
+a.externa:after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: lighter;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: .2rem; 
+  font-size: 70%;
+  vertical-align: super;
+}
+
+a.email:before {
+  content: "\f0e0";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-right: .3rem; 
+  vertical-align: top;
 }
