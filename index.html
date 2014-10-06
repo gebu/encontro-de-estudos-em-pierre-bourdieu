@@ -12,7 +12,7 @@ title: Encontro de Estudos em Pierre Bourdieu
         <div class="col-md-8 col-md-offset-2">
           <h1 class="brand-heading">{{ site.name }}</h1>
 
-          <p class="intro-text"><a href="http://dgp.cnpq.br/dgp/espelhogrupo/8615599726921024" title="{{site.author.name}} no Diretório dos Grupos de Pesquisa no Brasil Lattes">{{ site.author.name }} 
+          <p class="intro-text"><a class="externa" href="http://dgp.cnpq.br/dgp/espelhogrupo/8615599726921024" title="{{site.author.name}} no Diretório dos Grupos de Pesquisa no Brasil Lattes">{{ site.author.name }} 
             <span id="venue">&mdash; <abbr title="Instituto de Filosofia e Ciências Humanas">IFCH</abbr>/<abbr title="Universidade Estadual de Campinas">Unicamp</abbr>
             </span></a>
           </p>
@@ -26,8 +26,21 @@ title: Encontro de Estudos em Pierre Bourdieu
         </div>
       </div>
     </div>
-  </div><!-- About Section -->
+  </div><!-- Intro -->
 </header>
+
+<section id="sobre">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Sobre o {{ site.brand }}</h2>
+      <p id="descricao-sobre" class="lead">
+      O grupo tem por meta, além do aprimoramento dos trabalhos científicos
+      dos participantes do grupo, gerar publicações e encontros em torno da
+      obra de Pierre Bourdieu. 
+      </p>
+    </div>
+  </div>
+</section>
 
 <section id="conferencias">
   <div class="container">
@@ -36,11 +49,11 @@ title: Encontro de Estudos em Pierre Bourdieu
 
       <!-- <div class="col&#45;lg&#45;10 col&#45;lg&#45;offset&#45;2"> -->
         <h3>Conferência de abertura
-          <small>12 de novembro, 19h</small>
+          <small>3 de dezembro, 20h</small>
         </h3>
 
         <dl class="conferencias">
-          <dt><a href="http://lattes.cnpq.br/8800427022722082" title="Currículo">Prof. Dr. Renato Ortiz</a>
+          <dt><a class="lattes" href="http://lattes.cnpq.br/8800427022722082" title="Currículo do Sistema de Currículos Lattes">Prof. Dr. Renato Ortiz</a>
           <small>Universidade Estadual de Campinas</small>
           </dt>
           <dd>
@@ -94,7 +107,7 @@ title: Encontro de Estudos em Pierre Bourdieu
       <div class="col-lg-6">
         <h3 id="gt1">
           <abbr title="Grupos de Trabalho">GT</abbr>1: Teoria
-          <small>Debatedor: <strong><a href="http://lattes.cnpq.br/6943208071187301" title="Currículo">Prof. Dr. Michel Nicolau Netto</a></strong></small>
+          <small>Debatedor: <strong><a href="http://lattes.cnpq.br/0879426010670880" title="Currículo do Sistema de Currículos Lattes" class="lattes">Prof. Dr. Mário Augusto Medeiros da Silva</a></strong></small>
         </h3>
 
         <dl>
@@ -137,7 +150,7 @@ title: Encontro de Estudos em Pierre Bourdieu
 
         <h3 id="gt2">
           <abbr title="Grupos de Trabalho">GT</abbr>2: Aplicação
-          <small>Debatedor: <strong></strong></small>
+          <small>Debatedora: <strong><a href=" http://lattes.cnpq.br/9322843008905265" title=" http://lattes.cnpq.br/9322843008905265" class="lattes">Profa. Dra. Mariana Miggiolaro Chaguri</a></strong></small>
         </h3>
 
         <dl>
@@ -189,28 +202,23 @@ title: Encontro de Estudos em Pierre Bourdieu
         <table class="table">
           <tr>
             <th></th>
-            <th>12 de novembro</th>
-            <th>13 de novembro</th>
-            <th>14 de novembro</th>
+            <th>3 de dezembro</th>
+            <th>4 de dezembro</th>
           </tr>
           <tr>
-            <td>Manhã</td>
+            <td>9h&ndash;12h</td>
             <td><a href="#minicurso">Minicurso</a></td>
             <td><a href="#minicurso">Minicurso</a></td>
-            <td></td>
           </tr>
           <tr>
-            <td>Tarde</td>
-            <td></td>
+            <td>13h&ndash;17h</td>
             <td><a href="#gt1"><abbr title="Grupo de Trabalho">GT</abbr>1: Teoria</a></td>
             <td><a href="#gt2"><abbr title="Grupo de Trabalho">GT</abbr>2: Aplicação</a></td>
           </tr>
           <tr>
-            <td>Noite</td>
+            <td>19h&ndash;22h</td>
             <td><a href="#conferencia-abertura">Conferência de abertura</a></td>
-            <!-- <td><a href="#conferencia&#45;encerramento">Conferência de encerramento</a></td> -->
-            <td></td>
-            <td></td>
+            <td><a href="#atividade-encerramento">Atividade de encerramento</a></td>
           </tr>
         </table>
       </div>
@@ -224,9 +232,9 @@ title: Encontro de Estudos em Pierre Bourdieu
 
 <footer class="footer">
   <div class="container text-center">
-    <p class="lead">Apoio: <a href="" title="Programa de Pós-Graduação em Sociologia do Instituto de Filosofia e Ciências Humanas da Universidade Estadual de Campinas">
+    <p class="lead">Apoio: <a class="externa" href="" title="Programa de Pós-Graduação em Sociologia do Instituto de Filosofia e Ciências Humanas da Universidade Estadual de Campinas">
       Programa de Pós-Graduação em Sociologia — <abbr title="Instituto de Filosofia e Ciências Humanas">IFCH</abbr>/<abbr title="Universidade Estadual de Campinas">Unicamp</abbr></a></p>
-    <p class="footer">Contato: <a href="mailto:{{site.email}}">Grupo de Estudos e Pesquisas em Pierre Bourdieu</a></p>
+    <p class="footer">Contato: <a class="email" title="Contato através do email" href="mailto:{{site.author.email}}">Grupo de Estudos e Pesquisas em Pierre Bourdieu</a></p>
     <!-- <p>Copyright © Your Website 2014</p> -->
   </div>
 </footer>
