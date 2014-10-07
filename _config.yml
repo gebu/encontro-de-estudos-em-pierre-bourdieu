@@ -11,4 +11,4 @@ markdown:     kramdown
 exclude:      ['.rvmrc', '.rbenv-version', 'README.md', 'Rakefile', 'changelog.md']
 highlighter:  pygments
 # During production, we better set the url to localhost:
-url:          /encontro-de-estudos-em-pierre-bourdieu
+baseurl:          /encontro-de-estudos-em-pierre-bourdieu
