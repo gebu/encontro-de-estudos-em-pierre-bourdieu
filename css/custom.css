@@ -27,7 +27,7 @@ h2 {
 
 h3 > small {
   display: block;
-  padding-top: 10px;
+  padding-top: 20px;
   font-style: small-caps;
   font-weight: 100;
 }
@@ -35,6 +35,8 @@ h3 > small {
 h3 > small > strong {
   font-weight: 500;
   font-style: none;
+  display: block;
+  padding-top: .7rem;
 }
 
 .brand-heading {
