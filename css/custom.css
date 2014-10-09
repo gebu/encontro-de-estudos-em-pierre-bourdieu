@@ -130,6 +130,17 @@ dl.conferencias {
 dt {
   font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 22px;
+  font-weight: normal;
+}
+
+dl.gts > dt {
+  padding-top: 1.5rem;
+}
+
+dl.gts > dd {
+  font-family: "Oswald","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  font-size: 22px;
 }
 
 dd > p {
@@ -193,4 +204,11 @@ a.email:before {
   text-decoration: none;
   padding-right: .3rem; 
   vertical-align: top;
+}
+
+.rotulo-gt {
+  font-weight: 100;
+  /* margin-left: -4rem; */
+  display: block;
+  padding: 1rem 0;
 }
