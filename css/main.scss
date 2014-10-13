@@ -67,3 +67,19 @@ h2 {
   }
 }
 
+section.resumo {
+  min-height: 100vh;
+  padding: 0 20%;
+  padding-bottom: 3rem;
+}
+
+section:nth-child(even) {
+  background-color:       #111;
+  color: #fdfdfd;
+}
+
+.wrapper {
+  min-width: 100vw;
+  padding: 0;
+}
+
