@@ -221,3 +221,14 @@ a.email:before {
   display: block;
   padding: 1rem 0;
 }
+
+h2 small small {
+  display: block;
+}
+
+h3 small.debatedores {
+  text-transform: none;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: normal;
+}
